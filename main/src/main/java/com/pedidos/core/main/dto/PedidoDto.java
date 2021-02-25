@@ -10,8 +10,10 @@ public class PedidoDto {
 	private Long numeroPedido;
 
 	private Long idCliente;
+	
+	private Long idProducto;
 
-	private List<Long> idProducto;
+	private List<Long> listaProducto;
 
 	private Integer status;
 
@@ -45,12 +47,20 @@ public class PedidoDto {
 		this.idCliente = idCliente;
 	}
 
-	public List<Long> getIdProducto() {
+	public Long getIdProducto() {
 		return idProducto;
 	}
 
-	public void setIdProducto(List<Long> idProducto) {
+	public void setIdProducto(Long idProducto) {
 		this.idProducto = idProducto;
+	}
+
+	public List<Long> getListaProducto() {
+		return listaProducto;
+	}
+
+	public void setListaProducto(List<Long> listaProducto) {
+		this.listaProducto = listaProducto;
 	}
 
 	public Integer getStatus() {

@@ -24,8 +24,10 @@ public class Pedido implements Serializable {
 	@Column(name = "numero_pedido")
 	private Long numeroPedido;
 
+	@Column(name = "id_cliente")
 	private Long idCliente;
-	
+
+	@Column(name = "id_producto")
 	private Long idProducto;
 
 	private Integer status;

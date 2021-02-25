@@ -4,14 +4,18 @@ import java.util.Date;
 import java.util.List;
 
 public class FacturaDto {
-
+	
+	private String resultado;
+	
+	private String mensaje;
+	
 	private Long id;
 
 	private Long idPedido;
 
-	private Long iva;
+	private Double iva;
 
-	private Long domicilio;
+	private Double domicilio;
 
 	private Double total;
 
@@ -20,6 +24,22 @@ public class FacturaDto {
 	private Date fechaCreacion;
 
 	private List<ProductoDto> productoDtos;
+
+	public String getResultado() {
+		return resultado;
+	}
+
+	public void setResultado(String resultado) {
+		this.resultado = resultado;
+	}
+
+	public String getMensaje() {
+		return mensaje;
+	}
+
+	public void setMensaje(String mensaje) {
+		this.mensaje = mensaje;
+	}
 
 	public Long getId() {
 		return id;
@@ -37,19 +57,19 @@ public class FacturaDto {
 		this.idPedido = idPedido;
 	}
 
-	public Long getIva() {
+	public Double getIva() {
 		return iva;
 	}
 
-	public void setIva(Long iva) {
+	public void setIva(Double iva) {
 		this.iva = iva;
 	}
 
-	public Long getDomicilio() {
+	public Double getDomicilio() {
 		return domicilio;
 	}
 
-	public void setDomicilio(Long domicilio) {
+	public void setDomicilio(Double domicilio) {
 		this.domicilio = domicilio;
 	}
 

@@ -21,11 +21,12 @@ public class Factura implements Serializable {
 	@Column(name = "id_factura")
 	private Long id;
 
+	@Column(name = "id_pedido")
 	private Long idPedido;
 
-	private Long iva;
+	private Double iva;
 
-	private Long domicilio;
+	private Double domicilio;
 
 	private Double total;
 
@@ -50,19 +51,19 @@ public class Factura implements Serializable {
 		this.idPedido = idPedido;
 	}
 
-	public Long getIva() {
+	public Double getIva() {
 		return iva;
 	}
 
-	public void setIva(Long iva) {
+	public void setIva(Double iva) {
 		this.iva = iva;
 	}
 
-	public Long getDomicilio() {
+	public Double getDomicilio() {
 		return domicilio;
 	}
 
-	public void setDomicilio(Long domicilio) {
+	public void setDomicilio(Double domicilio) {
 		this.domicilio = domicilio;
 	}
 
